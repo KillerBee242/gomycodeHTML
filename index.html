@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* CSS du header et du Flexbox */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f4f4f4; /* Couleur de fond du header */
+            padding: 10px 20px; /* Espacement interne du header */
+        }
+
+        nav {
+            display: flex; /* Active Flexbox pour l'alignement */
+            justify-content: space-between; /* Espace entre le logo et les liens */
+            align-items: center; /* Centre verticalement les éléments */
+        }
+
+        .logo {
+            width: 150px; /* Ajuste la taille du logo */
+        }
+
+        .nav-links {
+            list-style: none; /* Supprime les puces de la liste */
+            display: flex; /* Affiche les liens horizontalement */
+        }
+
+        .nav-links li {
+            margin-left: 20px; /* Ajoute de l'espace entre les liens */
+        }
+
+        .nav-links a {
+            text-decoration: none; /* Supprime le soulignement des liens */
+            color: #333; /* Couleur du texte des liens */
+            font-weight: bold; /* Met les liens en gras */
+        }
+
+        /* Optionnel : un petit effet au survol des liens */
+        .nav-links a:hover {
+            color: #007bff; /* Change la couleur au survol */
+        }
+        /* Changer la police des sous-titres h2 */
+        h2 {
+            font-family: 'EB Garamond', sans-serif; /* Exemple avec Arial */
+            font-size: 24px; /* Taille de police pour les sous-titres */
+            font-weight: bold; /* Met les sous-titres en gras */
+            color: #333; /* Couleur du texte */
+        }
+
+        /* Changer la police des paragraphes */
+        p {
+            font-family: 'outfit', serif; /* Exemple avec Georgia */
+            font-size: 16px; /* Taille de police pour les paragraphes */
+            line-height: 1.6; /* Espacement entre les lignes pour améliorer la lisibilité */
+            color: #555; /* Couleur du texte */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/Logo Text.png" width="200" height="30" alt="Logo">
+            <ul>
+                <li><a href="Home"> Home</a></li>
+                <li><a href="About"> About</a></li>
+                <li><a href="Work"> Work</a></li>
+                <li><a href="Resume"> Resume</a></li>
+                <li><a href="Contacts"> Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore tempore at ab saepe natus aliquam quod dicta ea fugiat. Iste, voluptatibus non reiciendis voluptatum accusamus distinctio aliquid quisquam unde dolorem aperiam consequuntur explicabo ratione dolore nihil nisi omnis exercitationem. Velit veniam excepturi maxime! Earum sapiente eveniet reprehenderit et consequatur exercitationem.</p>
+        <br>
+        <h2>About</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore tempore at ab saepe natus aliquam quod dicta ea fugiat. Iste, voluptatibus non reiciendis voluptatum accusamus distinctio aliquid quisquam unde dolorem aperiam consequuntur explicabo ratione dolore nihil nisi omnis exercitationem. Velit veniam excepturi maxime! Earum sapiente eveniet reprehenderit et consequatur exercitationem.</p>
+        <br>
+        <h2>Work</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore tempore at ab saepe natus aliquam quod dicta ea fugiat. Iste, voluptatibus non reiciendis voluptatum accusamus distinctio aliquid quisquam unde dolorem aperiam consequuntur explicabo ratione dolore nihil nisi omnis exercitationem. Velit veniam excepturi maxime! Earum sapiente eveniet reprehenderit et consequatur exercitationem.</p>
+        <br>
+        <h2>Resume</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore tempore at ab saepe natus aliquam quod dicta ea fugiat. Iste, voluptatibus non reiciendis voluptatum accusamus distinctio aliquid quisquam unde dolorem aperiam consequuntur explicabo ratione dolore nihil nisi omnis exercitationem. Velit veniam excepturi maxime! Earum sapiente eveniet reprehenderit et consequatur exercitationem.</p>
+        <br>
+        <h2>Contacts</h2>
+        <form action="submit">
+            <ul>
+                <li>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required></li>
+            <br>
+            <li>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required></li>
+            <br>
+            <li>
+            <label for="date">Date :</label>
+            <input type="date" id="date" name="date" required></li>
+            <br>
+            <li>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea></li>
+        </ul>
+            <button type="submit">Envoyer</button>
+        </form>
+        <br>
+    </main>
+</body>
+</html>
